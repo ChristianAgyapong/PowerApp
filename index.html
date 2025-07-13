@@ -7,28 +7,271 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Meetup_Logo.png" alt="logo" />
+ <body>
+    <div class="mobile-container">
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <div class="status-left">
+                <span>07:00 AM</span>
+            </div>
+            <div class="status-right">
+                <span>📶</span>
+                <span>📶</span>
+                <span>🔋</span>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <div class="header">
+            <div class="welcome-section">
+                <div class="welcome-text">Welcome back</div>
+                <div class="user-name">Alfredo Torres</div>
+                <div class="priority-badge">🌟 Priority</div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Profile" class="profile-pic">
+        </div>
+
+        <!-- Balance Card -->
+        <div class="balance-card pulse">
+            <div class="balance-amount">$5,500.60</div>
+            <div class="balance-label">Balance</div>
+            <div class="card-info">
+                <div class="card-number">•••• •••• •••• 7890</div>
+                <div class="card-type">Fauget Bank Credit Card</div>
+            </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <svg class="stat-icon" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7v10c0 5.55 3.84 9.739 9 11 5.16-1.261 9-5.45 9-11V7l-10-5z"/>
+                </svg>
+                <div class="stat-value">$1,240</div>
+                <div class="stat-label">This Month</div>
+            </div>
+            <div class="stat-card">
+                <svg class="stat-icon" viewBox="0 0 24 24">
+                    <path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.06.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53C16.17 17.98 14.21 19 12 19z"/>
+                </svg>
+                <div class="stat-value">47</div>
+                <div class="stat-label">Transactions</div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+            <button class="action-btn">
+                <svg class="action-icon" viewBox="0 0 24 24">
+                    <path d="M9 11H7v3h2v-3zm4 0h-2v3h2v-3zm4 0h-2v3h2v-3zm2-7h-1V2h-2v2H8V2H6v2H5c-1.1 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                </svg>
+                <div class="action-text">Transfer</div>
+            </button>
+            <button class="action-btn">
+                <svg class="action-icon" viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/>
+                </svg>
+                <div class="action-text">Request</div>
+            </button>
+            <button class="action-btn">
+                <svg class="action-icon" viewBox="0 0 24 24">
+                    <path d="M9.5 6.5v3h-3v-3h3M11 5H5v6h6V5zm-1.5 9.5v3h-3v-3h3M11 13H5v6h6v-6zm6.5-6.5v3h-3v-3h3M19 5h-6v6h6V5zm-6.5 9.5v3h-3v-3h3M13 13h-6v6h6v-6zm6.5 1.5v3h-3v-3h3M19 13h-6v6h6v-6z"/>
+                </svg>
+                <div class="action-text">Scan</div>
+            </button>
+            <button class="action-btn">
+                <svg class="action-icon" viewBox="0 0 24 24">
+                    <path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h8c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
+                </svg>
+                <div class="action-text">Swap</div>
+            </button>
+            <button class="action-btn">
+                <svg class="action-icon" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                <div class="action-text">More</div>
+            </button>
+        </div>
+
+        <!-- Quick Transfer -->
+        <div class="quick-transfer">
+            <h3>Quick Transfer</h3>
+            <div class="contacts-list">
+                <div class="contact-item">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b4e63230?w=50&h=50&fit=crop&crop=face" alt="Sarah" class="contact-avatar">
+                    <div class="contact-name">Sarah</div>
+                </div>
+                <div class="contact-item">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" alt="Mike" class="contact-avatar">
+                    <div class="contact-name">Mike</div>
+                </div>
+                <div class="contact-item">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face" alt="Emma" class="contact-avatar">
+                    <div class="contact-name">Emma</div>
+                </div>
+                <div class="contact-item">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=50&h=50&fit=crop&crop=face" alt="John" class="contact-avatar">
+                    <div class="contact-name">John</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <svg class="search-icon" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+            <input type="text" class="search-input" placeholder="Search here">
+            <button class="filter-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Transactions -->
+        <div class="transactions-section">
+            <div class="section-header">
+                <h2 class="section-title">Transaction</h2>
+                <button class="sort-btn">
+                    Sort by Latest
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M7 10l5 5 5-5z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="transaction-item">
+                <div class="transaction-icon" style="background: rgba(79, 172, 254, 0.2); color: #4facfe;">
+                    ☕
+                </div>
+                <div class="transaction-info">
+                    <div class="transaction-name">Fauget Cafe</div>
+                    <div class="transaction-details">
+                        <span class="transaction-date">May 4th, 2024</span>
+                        <span>•</span>
+                        <span>Payment</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="transaction-amount amount-negative">-$12.50</div>
+                    <div class="transaction-status status-success">Success</div>
+                </div>
+            </div>
+
+            <div class="transaction-item">
+                <div class="transaction-icon" style="background: rgba(34, 197, 94, 0.2); color: #22c55e;">
+                    💼
+                </div>
+                <div class="transaction-info">
+                    <div class="transaction-name">Loroma, Inc.</div>
+                    <div class="transaction-details">
+                        <span class="transaction-date">May 3rd, 2024</span>
+                        <span>•</span>
+                        <span>Payment</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="transaction-amount amount-positive">+$2,500.00</div>
+                    <div class="transaction-status status-success">Success</div>
+                </div>
+            </div>
+
+            <div class="transaction-item">
+                <div class="transaction-icon" style="background: rgba(239, 68, 68, 0.2); color: #ef4444;">
+                    👤
+                </div>
+                <div class="transaction-info">
+                    <div class="transaction-name">Claudia Alves</div>
+                    <div class="transaction-details">
+                        <span class="transaction-date">May 2nd, 2024</span>
+                        <span>•</span>
+                        <span>Transfer</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="transaction-amount amount-negative">-$450.00</div>
+                    <div class="transaction-status status-failed">Failed</div>
+                </div>
+            </div>
+
+            <div class="transaction-item">
+                <div class="transaction-icon" style="background: rgba(168, 85, 247, 0.2); color: #a855f7;">
+                    ☕
+                </div>
+                <div class="transaction-info">
+                    <div class="transaction-name">Borcale Cafe</div>
+                    <div class="transaction-details">
+                        <span class="transaction-date">May 1st, 2024</span>
+                        <span>•</span>
+                        <span>Payment</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="transaction-amount amount-negative">-$8.75</div>
+                    <div class="transaction-status status-success">Success</div>
+                </div>
+            </div>
+
+            <div class="transaction-item">
+                <div class="transaction-icon" style="background: rgba(79, 172, 254, 0.2); color: #4facfe;">
+                    🏥
+                </div>
+                <div class="transaction-info">
+                    <div class="transaction-name">Avery Clinic</div>
+                    <div class="transaction-details">
+                        <span class="transaction-date">Apr 30th, 2024</span>
+                        <span>•</span>
+                        <span>Transfer</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="transaction-amount amount-negative">-$125.00</div>
+                    <div class="transaction-status status-success">Success</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Action Button -->
+        <button class="floating-action">
+            <svg viewBox="0 0 24 24">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+            </svg>
+        </button>
+
+        <!-- Bottom Navigation -->
+        <div class="bottom-nav">
+            <div class="nav-items">
+                <div class="nav-item active">
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                    </svg>
+                    <div class="nav-text">Dashboard</div>
+                </div>
+                <div class="nav-item">
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+                    </svg>
+                    <div class="nav-text">Analytics</div>
+                </div>
+                <div class="nav-item">
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    <div class="nav-text">Cards</div>
+                </div>
+                <div class="nav-item">
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                    <div class="nav-text">Profile</div>
+                    <div class="notification-badge">2</div>
+                </div>
+            </div>
+        </div>
     </div>
-    <nav>
- 
- <ul class="nav-links">
-  <li><a href="speakers.html">Speakers</a></li>
-  <li><a href="schedule.html">Schedule</a></li>
-  <li><a href="contact.html">Get in Touch</a></li>
-</ul>
 
- 
-</nav>
+    <script src="script.js"></script>
 
-  </header>
-
-  <section class="hero">
-    <div class="hero-content">
-      <h1><span>Event</span> <br /> Websites</h1>
-      <button class="btn">BOOK YOUR SPOT</button>
-    </div>
-  </section>
 </body>
 </html>
