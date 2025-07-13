@@ -2,24 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PowerApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Website</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="app">
-    <div id="loginScreen" class="screen">
-      <h1>Welcome to PowerApp</h1>
-      <button class="btn" onclick="login()">Login</button>
+  <header class="navbar">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Meetup_Logo.png" alt="logo" />
     </div>
+    <nav>
+  <ul class="nav-links">
+    <li><a href="speakers.html">Speakers</a></li>
+    <li><a href="schedule.html">Schedule</a></li>
+    <li><a href="contact.html">Get in Touch</a></li>
+  </ul>
+</nav>
 
-    <div id="homeScreen" class="screen hidden">
-      <h1>Home Screen</h1>
-      <p>PowerApp is now live! 🚀</p>
-      <button class="btn" onclick="logout()">Logout</button>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1><span>Event</span> <br /> Websites</h1>
+      <button class="btn">BOOK YOUR SPOT</button>
     </div>
-  </div>
-
-  <script src="script.js"></script>
+  </section>
 </body>
 </html>

@@ -1,9 +1,9 @@
 function login() {
-  document.getElementById('loginScreen').classList.add('hidden');
-  document.getElementById('homeScreen').classList.remove('hidden');
+  document.getElementById('loginScreen').classList.remove('active');
+  document.getElementById('homeScreen').classList.add('active');
 }
 
 function logout() {
-  document.getElementById('homeScreen').classList.add('hidden');
-  document.getElementById('loginScreen').classList.remove('hidden');
+  document.getElementById('homeScreen').classList.remove('active');
+  document.getElementById('loginScreen').classList.add('active');
 }
